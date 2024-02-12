@@ -5,133 +5,204 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>MAURO Workshop</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+	<title>MAURO Workshop</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style type="text/css">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		/* Apply the animation to the background image */
+		#header {
+			position: relative;
+			overflow: hidden;
+		}
 
-				<!-- Header -->
+		#header::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('images/cover.jpg');
+			background-size: contain; /* Set background size to cover entire header */
+			background-position: center;
+			animation: zoom 20s infinite alternate;
+			z-index: -1; /* Ensure the background image is behind the content */
+		}
+
+		/* Define the animation for infinite zoom in/out effect */
+		@keyframes zoom {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.05);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+
+		/* Ensure header content is on top */
+		.header-content {
+			position: relative;
+			z-index: 2;
+		}
+
+		/* Style for the white opaque box */
+		.header-content .text-content {
+			background-color: rgba(255, 255, 255, 0.5);
+			padding: 20px;
+			color: black;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+				<!-- Header 
+					<header id="header" class="alt" style="background-image: url('images/cover.jpg'); background-size: cover; background-position: center;">
+					    <span class="logo"><img src="images/logo.svg" alt="" /></span>
+					    <div style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; color: black; font-weight: bold;">
+					        <h1 style="color: black";>MAURO2024</h1>
+					        <p>1st International Workshop on Impact of Algorithms and Services on the Urban Ecosystem (MAURO)<br/>
+					            June 24th, 2024, Brussels, Belgium, co-located with the <a href="https://mdm2024.github.io/">MDM Conference</a>
+					        </p>
+					    </div>
+					</header>-->
+
+
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>MAURO2024</h1>
-						<p>1st International Workshop on <b>Impact of Algorithms and Services on the Urban Ecosystem (MAURO)</b><br />
-							June 24, 2024, Brussels, Belgium, co-located with the <a href="https://mdm2024.github.io/">MDM Conference</a></p>
+						<div class="header-content">
+							<div class="background-image"></div>
+							<div class="text-content">
+								<h1 style="color:black">MAURO2024</h1>
+								<p>1st International Workshop on Impact of Algorithms and Services on the Urban Ecosystem (MAURO)<br/>
+									June 24th, 2024, Brussels, Belgium, co-located with the <a href="https://mdm2024.github.io/">MDM Conference</a>
+								</p>
+							</div>
+						</div>
 					</header>
 
-				<!-- Nav -->
+
+
+
+
+					<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Call</a></li>
-							<li><a href="#first">Important dates</a></li>
-							<li><a href="#second">Submission guidelines</a></li>
+							<li><a href="#first">Important Dates</a></li>
+							<li><a href="#second">Submission Guidelines</a></li>
 							<li><a href="#cta">Program</a></li>
 						</ul>
 					</nav>
 
-				<!-- Main -->
+					<!-- Main -->
 					<div id="main">
 
 						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Call for Papers</h2>
-										</header>
-										<p>As cities worldwide are becoming increasingly interconnected and technologically advanced, it is crucial to explore the implications of algorithmic decision-making and AI applications on urban environments. The proposed workshop aims to delve into the profound influence of algorithms (AI in particular), platforms and services on the structure and dynamics of the urban ecosystem. In particular, the workshop aims to foster studies on the interplay between algorithms/AI/platforms/services and human mobility flows, points of interest, road network structure, and mobility services within the urban environment.</p>
-										<p>This workshop will bring together experts from different disciplines to discuss challenges and opportunities related to the study of the impact of algorithms and AI on the urban ecosystem and its well-being. By participating in this workshop, attendees will gain a comprehensive knowledge needed to navigate the challenges and opportunities presented by these technologies in their respective communities.</p>
-										<p>
-											Various facets of data analytics align with the objectives of this workshop, encompassing, but not confined to:
-											<ul>
-												<li>Exploration of the impact of Vehicle Routing and Alternative Routing on urban traffic flow.</li>
-												<li>In-depth analysis of routing algorithms influencing transportation efficiency.</li>
-												<li>Understanding the structure and dynamics of road networks and their implications for urban planning.</li>
-												<li>Evaluation of the impact of ride-hailing, car-sharing, and carpooling services on urban mobility.</li>
-												<li>Examination of algorithmic principles governing recommenders in these transformative transportation services.</li>
-												<li>Insights into the advancements and impact of autonomous driving technology.</li>
-												<li>Strategies for effective management of taxi fleets in the context of evolving transportation paradigms.</li>
-												<li>Investigation into the role of recommenders in real estate platforms and their broader impact on urban development.</li>
-												<li>Exploration of location prediction principles and their influence on the urban ecosystem.</li>
-												<li>Analysis of flow generation and prediction techniques and their consequences on urban dynamics.</li>
-												<li>Assessment of Points of Interest attractiveness and its correlation with urban mobility patterns.</li>
-												<li>Understanding the concept of Mobility-as-a-Service and its potential impact on urban transportation.</li>
-												<li>Forecasting urban, maritime, and aviation traffic flows, including travel time prediction.</li>
-												<li>Strategies for integrating mobility data with broader societal datasets.</li>
-												<li>Examination of Geo-social networks and their role in shaping urban connectivity.</li>
-												<li>Application of social computing in urban contexts and its influence on spatial epidemiology.</li>
-												<li>Optimization of urban resources allocation (e.g., energy, water, electric chargers, parking slots).</li>
-												<li>Insights into COVID-19 contact tracing methodologies and their ethical considerations.</li>
-												<li>Exploration of the philosophical and ethical dimensions surrounding mobility data analytics.</li>
-												<li>Deliberation on privacy issues related to the collection and utilization of mobility data in urban environments.</li>
+						<section id="intro" class="main">
+							<div class="spotlight">
+								<div class="content">
+									<header class="major">
+										<h2><b>Call for Papers</b></h2>
+									</header>
+									<p>As cities worldwide are becoming increasingly interconnected and technologically advanced, it is crucial to explore the implications of algorithmic decision-making and AI applications on urban environments. The proposed workshop aims to delve into the profound influence of algorithms (AI in particular), platforms and services on the structure and dynamics of the urban ecosystem. In particular, the workshop aims to foster studies on the interplay between algorithms/AI/platforms/services and human mobility flows, points of interest, road network structure, and mobility services within the urban environment.</p>
+									<p>This workshop will bring together experts from different disciplines to discuss challenges and opportunities related to the study of the impact of algorithms and AI on the urban ecosystem and its well-being. By participating in this workshop, attendees will gain a comprehensive knowledge needed to navigate the challenges and opportunities presented by these technologies in their respective communities.</p>
+									<p>
+										Various facets of data analytics align with the objectives of this workshop, encompassing, but not confined to:
+										<ul>
+											<li>Exploration of the impact of Vehicle Routing and Alternative Routing on urban traffic flow.</li>
+											<li>In-depth analysis of routing algorithms influencing transportation efficiency.</li>
+											<li>Understanding the structure and dynamics of road networks and their implications for urban planning.</li>
+											<li>Evaluation of the impact of ride-hailing, car-sharing, and carpooling services on urban mobility.</li>
+											<li>Examination of algorithmic principles governing recommenders in these transformative transportation services.</li>
+											<li>Insights into the advancements and impact of autonomous driving technology.</li>
+											<li>Strategies for effective management of taxi fleets in the context of evolving transportation paradigms.</li>
+											<li>Investigation into the role of recommenders in real estate platforms and their broader impact on urban development.</li>
+											<li>Exploration of location prediction principles and their influence on the urban ecosystem.</li>
+											<li>Analysis of flow generation and prediction techniques and their consequences on urban dynamics.</li>
+											<li>Assessment of Points of Interest attractiveness and its correlation with urban mobility patterns.</li>
+											<li>Understanding the concept of Mobility-as-a-Service and its potential impact on urban transportation.</li>
+											<li>Forecasting urban, maritime, and aviation traffic flows, including travel time prediction.</li>
+											<li>Strategies for integrating mobility data with broader societal datasets.</li>
+											<li>Examination of Geo-social networks and their role in shaping urban connectivity.</li>
+											<li>Application of social computing in urban contexts and its influence on spatial epidemiology.</li>
+											<li>Optimization of urban resources allocation (e.g., energy, water, electric chargers, parking slots).</li>
+											<li>Insights into COVID-19 contact tracing methodologies and their ethical considerations.</li>
+											<li>Exploration of the philosophical and ethical dimensions surrounding mobility data analytics.</li>
+											<li>Deliberation on privacy issues related to the collection and utilization of mobility data in urban environments.</li>
 
-											</ul>	
-										</p>
-									</div>
+										</ul>	
+									</p>
 								</div>
-							</section>
+							</div>
+						</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Important dates</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-calendar"></span>
-										<h4>Abstract submission</h4>
-										<p>April 5th, 2024 (AoE)</p>
-									</li>
-									<li>
-										<span class="icon solid major style3 fa-file"></span>
-										<h4>Paper submission</h4>
-										<p>April, 12th, 2024 (AoE)</p>
-									</li>
-									<li>
-										<span class="icon solid major style4 fa-envelope"></span>
-										<h4>Authors notification</h4>
-										<p>May, 3rd, 2024 (AoE)</p>
-									</li>
-									<li>
-										<span class="icon solid major style5 fa-calendar-check"></span>
-										<h4>Camera-ready due</h4>
-										<p>May, 24th, 2024 (AoE)</p>
-									</li>
-									<li>
-										<span class="icon solid major style2 fa-pen"></span>
-										<h4>Workshop day</h4>
-										<p>June, 24th, 2024</p>
-									</li>
-								</ul>
-							</section>
+						<section id="first" class="main special">
+							<header class="major">
+								<h2><b>Important Dates</b></h2>
+							</header>
+							<ul class="features">
+								<li>
+									<span class="icon solid major style1 fa-calendar"></span>
+									<h4>Abstract submission</h4>
+									<p>April 5th, 2024 (AoE)</p>
+								</li>
+								<li>
+									<span class="icon solid major style3 fa-file"></span>
+									<h4>Paper submission</h4>
+									<p>April, 12th, 2024 (AoE)</p>
+								</li>
+								<li>
+									<span class="icon solid major style4 fa-envelope"></span>
+									<h4>Authors notification</h4>
+									<p>May, 3rd, 2024 (AoE)</p>
+								</li>
+								<li>
+									<span class="icon solid major style5 fa-calendar-check"></span>
+									<h4>Camera-ready due</h4>
+									<p>May, 24th, 2024 (AoE)</p>
+								</li>
+								<li>
+									<span class="icon solid major style2 fa-pen"></span>
+									<h4>Workshop day</h4>
+									<p>June, 24th, 2024</p>
+								</li>
+							</ul>
+						</section>
 
 						<!-- Second Section -->
-							<section id="second" class="main">
-								<header class="major">
-									<h2>Submission guidelines</h2>
-								</header>
-								<p>We invite papers discussing novel research and ideas without substantial overlap with papers that have been published or submitted to a journal or a conference with proceedings. Submitted papers must be maximum 6 pages long (including references) and should report original research results or significant case studies.
-									Submissions should be formatted using the MDM 2024 camera-ready template and submitted through the workshop submission system. All submitted papers will be peer reviewed by at least two reviewers. If accepted, at least one of the authors must attend the workshop to present the work. All accepted papers will be published in the proceedings of the 2024 International Conference on Mobile Data Management and included in the IEEE Xplore® digital library.
-								</p>
-							</section>
+						<section id="second" class="main">
+							<header class="major">
+								<h2><b>Submission guidelines</b></h2>
+							</header>
+							<p>We invite papers discussing novel research and ideas without substantial overlap with papers that have been published or submitted to a journal or a conference with proceedings. Submitted papers must be <b>maximum 6 pages long</b> (including references) and should report original research results or significant case studies.
+								Submissions should be formatted using the MDM 2024 camera-ready <a style="color: blue;"href="https://www.ieee.org/conferences/publishing/templates.html">template</a> and submitted through the workshop submission system. All submitted papers will be peer reviewed by at least two reviewers. If accepted, at least one of the authors must attend the workshop to present the work. All accepted papers will be published in the proceedings of the 2024 International Conference on Mobile Data Management and included in the IEEE Xplore® digital library.
+							</p>
+						</section>
 
 						<!-- Get Started -->
-							<section id="cta" class="main">
-								<header class="major">
-									<h2>Program</h2>
-									<p>TBA</p>
-								</header>
-							</section>
+						<section id="cta" class="main">
+							<header class="major">
+								<h2><b>Program</b></h2>
+								<p>TBA</p>
+							</header>
+						</section>
 
 					</div>
 
-				<!-- Footer -->
+					<!-- Footer -->
 					<footer id="footer">
 						<section>
 							<h2>Aliquam sed mauris</h2>
@@ -161,16 +232,16 @@
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
-			</div>
+				</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+				<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+			</body>
+			</html>
