@@ -178,7 +178,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 		p.content {
@@ -2266,7 +2266,7 @@ input, select, textarea {
 
 			.icon.major:before {
 				display: inline-block;
-				font-size: 6.25rem;
+				font-size: 3rem;
 				width: 2.25em;
 				height: 2.25em;
 				line-height: 2.2em;
@@ -2814,13 +2814,13 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
+			width: calc(20% - 2em);
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
 		}
 
-			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
+			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3), .features li:nth-child(4), .features li:nth-child(5) {
 				margin-top: 0;
 			}
 
