@@ -2313,7 +2313,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.icon.major:before {
-				font-size: 5.5rem;
+				font-size: 3rem;
 			}
 
 		}
