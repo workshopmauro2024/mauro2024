@@ -14,51 +14,54 @@
 	<style type="text/css">
 
 		/* Apply the animation to the background image */
-		#header {
-			position: relative;
-			overflow: hidden;
-		}
+/* Apply the animation to the background image */
+#header {
+    position: relative;
+    overflow: hidden;
+}
 
-		#header::after {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-image: url('images/cover.jpg');
-			background-size: contain; /* Set background size to cover entire header */
-			background-position: center;
-			animation: zoom 20s infinite alternate;
-			z-index: -1; /* Ensure the background image is behind the content */
-		}
+#header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: zoom 20s infinite alternate;
+    z-index: -1;
+}
 
-		/* Define the animation for infinite zoom in/out effect */
-		@keyframes zoom {
-			0% {
-				transform: scale(1);
-			}
-			50% {
-				transform: scale(1.05);
-			}
-			100% {
-				transform: scale(1);
-			}
-		}
+/* Define the animation for infinite zoom in/out effect */
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
-		/* Ensure header content is on top */
-		.header-content {
-			position: relative;
-			z-index: 2;
-		}
+/* Ensure header content is on top */
+.header-content {
+    position: relative;
+    z-index: 2;
+}
 
-		/* Style for the white opaque box */
-		.header-content .text-content {
-			background-color: rgba(255, 255, 255, 0.32);
-			padding: 20px;
-			color: black;
-			font-weight: bold;
-		}
+/* Style for the white opaque box */
+.header-content .text-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+
 
 	</style>
 </head>
