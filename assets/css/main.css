@@ -2321,7 +2321,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.icon.major:before {
-				font-size: 4.75rem;
+				font-size: 3rem;
 			}
 
 		}
@@ -2334,7 +2334,7 @@ input, select, textarea {
 			}
 
 				.icon.major:before {
-					font-size: 3.5rem;
+					font-size: 2rem;
 				}
 
 		}
