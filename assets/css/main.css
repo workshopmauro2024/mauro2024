@@ -117,6 +117,22 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+		.container {
+			width: 50%; /* Larghezza desiderata per il div */
+			overflow: hidden;
+			margin: auto; /* Centro il div orizzontalmente */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 1%;
+
+		  }
+		
+		  .container img {
+			max-width: 50%; /* Larghezza massima del 50% del contenitore */
+			height: auto; /* Altezza automatica per mantenere le proporzioni */
+		  }
+
 /* Type */
 
 	body {
