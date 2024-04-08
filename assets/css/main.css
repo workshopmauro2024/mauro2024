@@ -128,8 +128,8 @@ input, select, textarea {
 
 		  }
 		
-		  .container img {
-			max-width: 30%; /* Larghezza massima del 50% del contenitore */
+		  .container_img {
+			max-width: 50%; /* Larghezza massima del 50% del contenitore */
 			height: auto; /* Altezza automatica per mantenere le proporzioni */
 		  }
 
