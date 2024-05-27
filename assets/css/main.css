@@ -118,7 +118,7 @@ input, select, textarea {
 		}
 
 		.container {
-			width: 50%; /* Larghezza desiderata per il div */
+			width: 80%; /* Larghezza desiderata per il div */
 			overflow: hidden;
 			margin: auto; /* Centro il div orizzontalmente */
 			display: flex;
